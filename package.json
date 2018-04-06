@@ -1,11 +1,15 @@
 {
   "name": "@codin/polymer-card",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "polymer card element",
   "main": "./src/index.js",
   "scripts": {
-    "build": "npx babel src --out-file /dist/index.js",
+    "build": "npx babel src --out-path ./",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:odinr/codin-polymer-card.git"
   },
   "keywords": [
     "polymer",
@@ -16,11 +20,10 @@
   "license": "ISC",
   "dependencies": {
     "@polymer/iron-image": "^3.0.0-pre.12",
-    "@polymer/polymer": "^3.0.0-pre.12",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-dedent": "^2.0.0"
+    "@polymer/polymer": "^3.0.0-pre.12"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-plugin-inline-import": "^2.0.6"
   }
 }
