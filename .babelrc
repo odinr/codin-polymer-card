@@ -1,0 +1,12 @@
+{
+    "comments": false,
+    "plugins": [
+      ["babel-plugin-inline-import", {
+        "extensions": [
+          ".html",
+          ".pcss"
+        ]
+      }],
+      ["babel-plugin-dedent"]
+    ]
+  }

@@ -1,0 +1,26 @@
+{
+  "name": "@codin/polymer-card",
+  "version": "1.1.0",
+  "description": "polymer card element",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "npx babel src --out-file /dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "polymer",
+    "webcomponent",
+    "card"
+  ],
+  "author": "odin rochmann",
+  "license": "ISC",
+  "dependencies": {
+    "@polymer/iron-image": "^3.0.0-pre.12",
+    "@polymer/polymer": "^3.0.0-pre.12",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-dedent": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-import": "^2.0.6"
+  }
+}
