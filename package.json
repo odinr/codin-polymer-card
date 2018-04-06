@@ -4,7 +4,7 @@
   "description": "polymer card element",
   "main": "./src/index.js",
   "scripts": {
-    "build": "npx babel src --out-path ./",
+    "build": "babel src -d ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,20 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-plugin-inline-import": "^2.0.6"
+    "babel-plugin-inline-import": "^2.0.6",
+  },
+  "babel": {
+    "comments": false,
+    "plugins": [
+      [
+        "inline-import",
+        {
+          "extensions": [
+            ".pcss",
+            ".html"
+          ]
+        }
+      ]
+    ]
   }
 }
