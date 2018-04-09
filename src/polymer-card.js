@@ -2,7 +2,7 @@ import {PolymerElement, html} from '@polymer/polymer/polymer-element';
 
 import '@polymer/iron-image/iron-image.js';
 
-import template from './polymer-card.html';
+import template from './polymer-card.pug';
 import style from './polymer-card.pcss';
 
 export default class CodinPolymerCard extends PolymerElement {

@@ -47,6 +47,11 @@ module.exports = [
                 use: {
                     loader: 'babel-loader',
                 }
+            },{
+                test: /\.pug$/,
+                use: {
+                    loader: 'pug-loader',
+                }
             }]
         },
     }),
